@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <nav className="z-50 sticky top-2.5 md:top-5">
-      <div className="w-full flex items-center justify-between px-4 lg:px-3 py-4 bg-primary rounded-full shadow-lg">
+      <div className="w-full flex items-center justify-between px-4 lg:px-3 py-4 bg-primary rounded-full">
         {/* Logo */}
         <Link href="/" className="flex items-center cursor-pointer space-x-2">
           <Image
@@ -64,7 +64,7 @@ const Navbar = () => {
         <div className="hidden lg:block">
           <Link
             href="/contact"
-            className="px-5 py-2 rounded-full bg-secondary text-primary font-semibold shadow hover:bg-secondary transition"
+            className="px-5 py-2 rounded-full bg-secondary text-primary font-medium hover:bg-secondary transition"
           >
             Let&apos;s Connect
           </Link>
@@ -118,7 +118,7 @@ const Navbar = () => {
         <div className="mt-6">
           <Link
             href="/contact"
-            className="block text-center px-5 py-2 rounded-full bg-secondary text-primary font-semibold shadow hover:bg-secondary transition"
+            className="block text-center px-5 py-2 rounded-full bg-secondary text-primary font-medium shadow hover:bg-secondary transition"
             onClick={() => setIsOpen(false)}
           >
             Let&apos;s Connect

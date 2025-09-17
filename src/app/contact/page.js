@@ -1,17 +1,30 @@
-import Image from "next/image";
-import React from "react";
+import BlogSection from "@/Component/BlogSection/BlogSection";
+import GetQuote from "@/Component/GetQuote/GetQuote";
+import HeroSection from "@/Component/HeroSection/HeroSection";
+import ProjectsSection from "@/Component/ProjectsSection/ProjectsSection";
+import ServiceSection from "@/Component/ServiceSection/ServiceSection";
+import TechStack from "@/Component/TechStack/TechStack";
+import TestimonialSection from "@/Component/TestimonialSection/TestimonialSection";
+import WhyInfooceanSection from "@/Component/WhyInfooceanSection/WhyInfooceanSection";
 
 const page = () => {
-  return  <main className="h-[50vh] w-full flex flex-col gap-2 items-center justify-center bg-primary rounded-2xl my-10">
-        <Image
-          src="/images/Infoocean-Logo.png"
-          alt="Infoocean Logo"
-          width={1000}
-          height={1000}
-          className="h-5 md:h-10 w-auto"
-        />
-        <p className="text-secondary w-[60%] text-center">Contact Page is Under Development..!</p>
-      </main>;
+  return (
+    <div className="flex flex-col gap-10">
+      <HeroSection />
+      <TechStack />
+      <ServiceSection />
+      <WhyInfooceanSection />
+      <ProjectsSection />
+      <GetQuote
+        heading="Your project here"
+        description="The proof is in our work. Check out our case study to learn how our product development services can transform your business."
+        buttonText="Get Quote"
+        buttonLink="/contact"
+      />
+      <BlogSection />
+      <TestimonialSection />
+    </div>
+  );
 };
 
 export default page;
