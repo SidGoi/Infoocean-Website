@@ -190,7 +190,7 @@ const Footer = () => {
         <div className="w-full mt-8 border-b border-white border-opacity-30">
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1" className="border-b-0">
-              <AccordionTrigger className="w-full flex justify-between text-light font-semibold py-4 hover:no-underline">
+              <AccordionTrigger className="w-full flex justify-between text-white [&>svg]:text-white font-semibold py-4 hover:no-underline">
                 Show all pages
               </AccordionTrigger>
               <AccordionContent className="text-left py-4 space-y-2 transition-all duration-300 ease-in-out">
