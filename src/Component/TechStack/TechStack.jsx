@@ -7,8 +7,8 @@ import { Marquee } from "@/components/ui/marquee";
 const TechStack = () => {
   return (
     <div className="relative w-full flex overflow-hidden">
-      <div className={`flex items-center justify-center gap-10 shrink-0`}>
-        <Marquee>
+      <div className={`flex items-center justify-center gap-10 shrink-0 cursor-pointer`}>
+        <Marquee pauseOnHover={true}>
           {techStack.map((tech, index) => (
             <span
               key={index}
