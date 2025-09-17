@@ -8,10 +8,10 @@ const HeroSection = () => {
     <section className="w-full overflow-hidden py-20 md:py-14 lg:py-14 flex items-center justify-center">
       <div className="container mx-auto px-3 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center max-w-6xl">
         <div className="flex flex-col gap-4 items-center lg:items-start text-center lg:text-left">
-          <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-primary leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary leading-tight">
             Ride the Wave of <br />
             <span
-              className="text-4xl sm:text-4xl lg:text-7xl relative inline-block text-transparent bg-clip-text bg-cover font-extrabold"
+              className="text-5xl sm:text-5xl lg:text-7xl relative inline-block text-transparent bg-clip-text bg-cover font-extrabold"
               style={{
                 backgroundImage: "url(/images/innovation-text-bg.png)",
               }}
