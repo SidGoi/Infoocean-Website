@@ -19,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={montserrat.className}>
-      <body className="px-5 py-2.5 md:px-10 md:py-5">
+      <body className="px-5 py-2.5 md:px-10 md:py-5 flex flex-col gap-10">
         <Navbar />
         <main>{children}</main>
         <Footer />
