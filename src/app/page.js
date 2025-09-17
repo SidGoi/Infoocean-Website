@@ -8,7 +8,7 @@ export default function Home() {
         alt="Infoocean Logo"
         width={1000}
         height={1000}
-        className="h-10 w-auto"
+        className="h-5 md:h-10 w-auto"
       />
       <p className="text-secondary">Page is Under Development..!</p>
     </main>
