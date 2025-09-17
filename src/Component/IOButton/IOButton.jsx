@@ -30,7 +30,7 @@ const IOButton = (props) => {
     inline-flex items-center justify-center gap-4 h-10 px-6 font-medium relative
     transition-all duration-300 ease-in z-10 overflow-hidden cursor-pointer
   
-    active:scale-95 active:transition-transform active:duration-100
+    active:scale-95 active:transition-transform active:duration-100 w-fit
   `;
 
   // Color theme classes based on the 'theme' prop

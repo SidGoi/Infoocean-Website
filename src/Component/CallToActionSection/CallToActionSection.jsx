@@ -13,9 +13,7 @@ const CallToActionSection = ({
   reverseLayout = false,
 }) => {
   return (
-    <section
-      className={`px-4 sm:px-6 lg:px-8`}
-    >
+    <section className={`px-4 sm:px-6 lg:px-8`}>
       <div
         className={`max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16 lg:gap-20 ${
           reverseLayout ? "md:flex-row-reverse" : "" // Apply reverse layout if prop is true
@@ -30,18 +28,20 @@ const CallToActionSection = ({
             height={1000} // Increased height
             layout="responsive" // Makes the image responsive within its container
             objectFit="contain" // Ensures the whole image is visible without cropping
-    className="w-20 h-auto"
+            className="w-20 h-auto"
           />
         </div>
 
         {/* Text Content Section */}
-        <div className="w-full md:w-1/2 text-center md:text-left">
+        <div className="w-full md:w-1/2 text-center md:text-left flex flex-col gap-3 items-center justify-center md:items-start md:justify-start">
           <h2
-            className={`text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-8 text-primary`}
+            className={`text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-primary`}
           >
             {heading}
           </h2>
-          <p className={`text-lg md:text-xl font-medium mb-4 text-primary`}>{description}</p>
+          <p className={`text-lg md:text-xl font-medium text-primary`}>
+            {description}
+          </p>
           <IOButton title={buttonText} />
         </div>
       </div>
