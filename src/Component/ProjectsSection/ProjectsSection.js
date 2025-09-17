@@ -41,14 +41,14 @@ const ProjectsSection = () => {
         linkText="see more of our work »"
         linkHref="/our-work"
       />
-
-      {projectsData.map((project, index) => (
-        <ProjectCard
-          key={index}
-          project={project}
-          isReversed={index % 2 !== 0} // Alternates the layout for even/odd items
-        />
-      ))}
+   
+        {projectsData.map((project, index) => (
+          <ProjectCard
+            key={index}
+            project={project}
+            isReversed={index % 2 !== 0} // Alternates the layout for even/odd items
+          />
+        ))}
     </section>
   );
 };
