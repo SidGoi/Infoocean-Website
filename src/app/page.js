@@ -1,4 +1,5 @@
 import HeroSection from "@/Component/HeroSection/HeroSection";
+import ProjectsSection from "@/Component/ProjectsSection/ProjectsSection";
 import ServiceSection from "@/Component/ServiceSection/ServiceSection";
 import TechStack from "@/Component/TechStack/TechStack";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroSection />
       <TechStack />
       <ServiceSection />
+      <ProjectsSection />
     </div>
   );
 }
