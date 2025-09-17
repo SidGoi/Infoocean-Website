@@ -56,7 +56,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-primary text-light w-full rounded-2xl">
+    <footer className="bg-primary text-light w-full rounded-2xl mt-20">
       {/* Desktop Footer */}
       <div className="hidden lg:flex flex-col gap-10 py-12 px-12 ">
         <div className="grid grid-cols-4 gap-6">

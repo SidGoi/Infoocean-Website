@@ -1,11 +1,11 @@
 import HeroSection from "@/Component/HeroSection/HeroSection";
-import IOButton from "@/Component/IOButton/IOButton";
-import Image from "next/image";
+import TechStack from "@/Component/TechStack/TechStack";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
+      <TechStack />
     </>
   );
 }
