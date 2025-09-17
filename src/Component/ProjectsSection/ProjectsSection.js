@@ -35,7 +35,7 @@ const projectsData = [
 
 const ProjectsSection = () => {
   return (
-    <section className="bg-white flex flex-col gap-5 md:gap-10">
+    <section className="flex flex-col gap-5 md:gap-10">
       <SectionTitle
         title="Made by infoocean"
         linkText="see more of our work »"

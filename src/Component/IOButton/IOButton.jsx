@@ -27,7 +27,7 @@ const IOButton = (props) => {
 
   // Common button classes for both light and dark versions
   const baseClasses = `
-    inline-flex items-center justify-center gap-4 h-10 px-6 font-semibold relative
+    inline-flex items-center justify-center gap-4 h-10 px-6 font-medium relative
     transition-all duration-300 ease-in z-10 overflow-hidden cursor-pointer
   
     active:scale-95 active:transition-transform active:duration-100

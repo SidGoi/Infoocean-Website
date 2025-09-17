@@ -1,3 +1,4 @@
+import BlogSection from "@/Component/BlogSection/BlogSection";
 import HeroSection from "@/Component/HeroSection/HeroSection";
 import ProjectsSection from "@/Component/ProjectsSection/ProjectsSection";
 import ServiceSection from "@/Component/ServiceSection/ServiceSection";
@@ -13,6 +14,7 @@ export default function Home() {
       <ServiceSection />
       <WhyInfooceanSection />
       <ProjectsSection />
+      <BlogSection />
       <TestimonialSection />
     </div>
   );
