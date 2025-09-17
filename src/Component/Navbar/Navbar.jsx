@@ -38,6 +38,7 @@ const Navbar = () => {
             width={1000}
             className="h-4 w-auto px-4 z-50"
             alt="Infoocean-Logo"
+            priority
           />
         </Link>
 

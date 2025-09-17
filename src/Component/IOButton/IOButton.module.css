@@ -1,0 +1,65 @@
+.btnDark::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 5%;
+    background-color: var(--color-secondary);
+    right: -5px;
+    transition: width 0.3s ease-out;
+    z-index: -1;
+}
+.btnDark:hover{
+    color: var(--color-primary);
+}
+
+.btnDark:hover::after {
+    width: 100%;
+}
+
+.btnDark .btnArrowForward {
+    color: #fff;
+}
+
+.btnDark:hover .btnArrowForward {
+    color: var(--color-primary);
+}
+
+/* Light Button Theme */
+.btnLight::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 5%;
+    background-color: var(--color-primary);
+    right: -5px;
+    transition: width 0.3s ease-out;
+    z-index: -1;
+}
+
+.btnLight:hover::after {
+    width: 100%;
+    color: var(--color-primary);
+}
+
+.btnLight .btnArrowForward {
+    color: var(--color-primary);
+}
+
+.btnLight:hover .btnArrowForward {
+    color: var(--color-secondary);
+}
+
+/* Common Arrow Transition for both themes */
+.btnArrowForward {
+    transition: color 0.3s ease, transform 0.3s ease;
+    height: 1.2rem;
+    width: auto;
+}
+
+.btnDark:hover .btnArrowForward {
+    transform: translateX(4px);
+}
+
+.btnLight:hover .btnArrowForward {
+    transform: translateX(4px);
+}

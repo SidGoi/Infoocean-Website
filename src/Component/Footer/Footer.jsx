@@ -11,7 +11,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-// ✅ Variables / Config
+
 const latestProjects = [
   "Project no.1",
   "Project no.2",
