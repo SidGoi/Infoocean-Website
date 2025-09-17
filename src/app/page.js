@@ -3,6 +3,7 @@ import ProjectsSection from "@/Component/ProjectsSection/ProjectsSection";
 import ServiceSection from "@/Component/ServiceSection/ServiceSection";
 import TechStack from "@/Component/TechStack/TechStack";
 import TestimonialSection from "@/Component/TestimonialSection/TestimonialSection";
+import WhyInfooceanSection from "@/Component/WhyInfooceanSection/WhyInfooceanSection";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroSection />
       <TechStack />
       <ServiceSection />
+      <WhyInfooceanSection />
       <ProjectsSection />
       <TestimonialSection />
     </div>
