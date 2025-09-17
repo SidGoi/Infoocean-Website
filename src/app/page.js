@@ -6,8 +6,8 @@ export default function Home() {
       <Image
         src="/images/Infoocean-Logo.png"
         alt="Infoocean Logo"
-        width={150}
-        height={40}
+        width={1000}
+        height={1000}
         className="h-10 w-auto"
       />
       <p className="text-secondary">Page is Under Development..!</p>
