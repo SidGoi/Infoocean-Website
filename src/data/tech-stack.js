@@ -5,7 +5,7 @@ export const techStack = [
   { name: ".NET", icon: "/icons/tech-stack/NET.svg" },
   { name: "NodeJS", icon: "/icons/tech-stack/Nodejs.svg" },
   { name: "ReactJS", icon: "/icons/tech-stack/React.svg" },
-  { name: "NextJS", icon: "/icons/tech-stack/nextjs.svg" },
+  { name: "NextJS", icon: "/icons/tech-stack/Nextjs.svg" },
   { name: "ExpressJS", icon: "/icons/tech-stack/Express.svg" },
   { name: "Docker", icon: "/icons/tech-stack/Docker.svg" },
 ];
