@@ -101,7 +101,7 @@ const Navbar = () => {
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <ul className="flex flex-col gap-4 text-light text-xl font-medium">
+        <ul className="flex flex-col items-center gap-4 text-light text-xl font-medium focus:text-secondary">
           {navItems.map((item) => (
             <li key={item.path}>
               <Link

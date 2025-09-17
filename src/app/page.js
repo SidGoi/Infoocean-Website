@@ -10,7 +10,7 @@ export default function Home() {
         height={1000}
         className="h-5 md:h-10 w-auto"
       />
-      <p className="text-secondary">Page is Under Development..!</p>
+      <p className="text-secondary w-[60%] text-center">Home Page is Under Development..!</p>
     </main>
   );
 }
