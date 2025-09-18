@@ -2,6 +2,7 @@ import BlogSection from "@/Component/BlogSection/BlogSection";
 import CallToActionSection from "@/Component/CallToActionSection/CallToActionSection";
 import FocusAreaSection from "@/Component/FocusAreaSection/FocusAreaSection";
 import GetQuote from "@/Component/GetQuote/GetQuote";
+import OrbitingCirclesSection from "@/Component/OrbitingCirclesSection/OrbitingCirclesSection";
 import ProjectsSection from "@/Component/ProjectsSection/ProjectsSection";
 import ServiceSection from "@/Component/ServiceSection/ServiceSection";
 import TeamMemberSection from "@/Component/TeamMemberSection/TeamMemberSection";
@@ -23,6 +24,7 @@ const page = () => {
       <ServiceSection />
       <FocusAreaSection />
       <ProjectsSection />
+      <OrbitingCirclesSection />
       <GetQuote
         heading="Your project here"
         description="The proof is in our work. Check out our case study to learn how our product development services can transform your business."
