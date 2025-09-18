@@ -50,9 +50,28 @@ const Navbar = () => {
                 href={item.path}
                 className={`hover:text-secondary transition-colors duration-300 ${
                   pathname === item.path
-                    ? "text-secondary"
-                    : "text-light hover:text-secondary"
-                }`}
+                    ? "text-secondary after:scale-x-100"
+                    : ""
+                }
+                 relative 
+                  text-lg 
+                  font-medium 
+                  hover:text-secondary 
+                  transition-colors 
+                  duration-300 
+                  after:content-[''] 
+                  after:absolute 
+                  after:w-full 
+                  after:h-[2px] 
+                  after:bottom-0 
+                  after:left-0 
+                  after:bg-secondary 
+                  after:scale-x-0 
+                  after:transition-transform 
+                  after:duration-300 
+                  hover:after:scale-x-100
+                  py-1 px-2
+                 `}
               >
                 {item.label}
               </Link>

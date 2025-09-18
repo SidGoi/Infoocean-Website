@@ -12,7 +12,7 @@ const BlogSection = () => {
       <h2 className="sr-only">Our Latest Blog Posts</h2>
       <SectionTitle
         title="Insight Blog"
-        linkText="Explore all blogs »"
+        linkText="Explore all blogs"
         linkHref="/"
       />
       <div>

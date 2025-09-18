@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Montserrat, Quicksand, DM_Sans, Poppins  } from "next/font/google";
+import { Montserrat, Quicksand, DM_Sans, Poppins, Outfit  } from "next/font/google";
 import Navbar from "@/Component/Navbar/Navbar";
 import Footer from "@/Component/Footer/Footer";
 
@@ -23,6 +23,11 @@ const poppins = Poppins({
   subsets: ["latin"],
 });
 
+const outfit = Outfit({
+  weight: ["400", "500", "700"], // Available DM Sans weights
+  subsets: ["latin"],
+});
+
 export const metadata = {
   title: "Infoocean",
   description: "Waves of Smart Solution.",
@@ -33,7 +38,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={poppins.className}>
+    <html lang="en" className={outfit.className}>
       <body className="px-5 py-2.5 md:px-10 md:py-5 flex flex-col gap-10">
         <Navbar />
         <main>{children}</main>

@@ -1,12 +1,12 @@
 import BlogSection from "@/Component/BlogSection/BlogSection";
 import CallToActionSection from "@/Component/CallToActionSection/CallToActionSection";
+import FocusAreaSection from "@/Component/FocusAreaSection/FocusAreaSection";
 import GetQuote from "@/Component/GetQuote/GetQuote";
 import ProjectsSection from "@/Component/ProjectsSection/ProjectsSection";
 import ServiceSection from "@/Component/ServiceSection/ServiceSection";
 import TeamMemberSection from "@/Component/TeamMemberSection/TeamMemberSection";
 import TechStack from "@/Component/TechStack/TechStack";
 import TestimonialSection from "@/Component/TestimonialSection/TestimonialSection";
-import WhyInfooceanSection from "@/Component/WhyInfooceanSection/WhyInfooceanSection";
 
 const page = () => {
   return (
@@ -21,6 +21,7 @@ const page = () => {
       />
       <TechStack />
       <ServiceSection />
+      <FocusAreaSection />
       <ProjectsSection />
       <GetQuote
         heading="Your project here"

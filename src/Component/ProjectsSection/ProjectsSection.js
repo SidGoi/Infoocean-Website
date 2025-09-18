@@ -38,7 +38,7 @@ const ProjectsSection = () => {
     <section className="flex flex-col gap-5 md:gap-10">
       <SectionTitle
         title="Made by infoocean"
-        linkText="see more of our work »"
+        linkText="see more of our work"
         linkHref="/our-work"
       />
    

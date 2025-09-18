@@ -10,7 +10,7 @@ const TestimonialSection = () => {
     <section className="overflow-hidden flex flex-col gap-5 md:gap-10">
       <SectionTitle
         title="What Partners Say"
-        linkText="see more of our work »"
+        linkText="see more of our work"
         linkHref="/our-work"
       />
       <Marquee pauseOnHover={true} className="[--duration:150s]">
