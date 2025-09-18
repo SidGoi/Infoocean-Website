@@ -1,0 +1,209 @@
+.MultiStepForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.ContactInformationContainer,
+.ProjectDetailsContainer {
+  width: 330px;
+  border: 1px solid #111;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  flex-direction: column;
+  gap: 40px;
+  padding: 80px 80px;
+  transition: all 0.5s ease; /* ✨ Smooth animation */
+}
+
+/* Extended state */
+.extended {
+  width: 770px;
+  transition: all 0.5s ease; /* ✨ Smooth animation */
+}
+
+.data,
+.nextBtn {
+  display: none;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  h2 {
+    font-weight: 500;
+    position: relative;
+    width: max-content;
+    color: grey;
+  }
+
+  .line {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    border-radius: 10px;
+    background-color: grey;
+  }
+}
+
+.circle {
+  width: 14px;
+  height: 14px;
+  background-color: grey;
+  border-radius: 100px;
+}
+
+
+
+.extended .data {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+
+.extended .inputFild {
+  padding: 1rem 1.5rem;
+  border: 1px solid #9CA3AF;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 1rem;
+  outline: none;
+  transition: 0.5s;
+  font-size: 1.02rem;
+  color: #111;
+  font-weight: 500;
+  resize: none;
+
+  &:focus {
+    border-color: aqua;
+  }
+}
+
+.extended .nextBtn {
+  display: block;
+}
+
+.extended .heading {
+  h2 {
+    color: #111;
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  .circle {
+    background-color: aqua;
+    width: 30px;
+    height: 30px;
+  }
+
+  .line {
+    background-color: aqua;
+    height: 3px;
+  }
+
+}
+
+.data h3 {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.nextBtn {
+  align-self: flex-end;
+}
+
+
+.BtnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+/* 📱 Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .MultiStepForm {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 1rem;
+      transition: all;
+
+  }
+
+  .ContactInformationContainer,
+  .ProjectDetailsContainer {
+    width: 100%;
+    max-width: 100%;
+    height: fit-content;
+    /* let it shrink naturally */
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+    transition: 0.5s;
+
+  }
+
+  .extended {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .extended .inputFild {
+    font-size: 0.95rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .data h3 {
+    font-size: 24px;
+  }
+
+  .extended .heading h2 {
+    font-size: 24px;
+  }
+
+  .circle {
+    width: 12px;
+    height: 12px;
+  }
+
+  .extended .circle {
+    width: 20px;
+    height: 20px;
+  }
+
+  .BtnContainer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nextBtn {
+    align-self: stretch;
+  }
+}
+
+@media (max-width: 480px) {
+  .data h3 {
+    font-size: 20px;
+  }
+
+  .extended .heading h2 {
+    font-size: 20px;
+  }
+
+  .extended .inputFild {
+    font-size: 0.9rem;
+  }
+}

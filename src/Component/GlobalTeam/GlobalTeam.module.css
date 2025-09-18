@@ -1,0 +1,216 @@
+.globalWrapper {
+  background-color: #ffffff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 80px;
+  margin-bottom: 80px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 32px;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #333;
+}
+
+.mapWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.map {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Marker wrapper */
+.marker {
+  position: absolute;
+  border-radius: 50%;
+  height: 12%;
+  width: 12%;
+  z-index: 10;
+}
+
+/* India */
+.India {
+  top: 54%;
+  left: 65%;
+  height: 13%;
+  width: 9%;
+}
+
+/* Australia */
+.Australia {
+  top: 75%;
+  left: 79%;
+}
+
+/* Details */
+.markerDetails {
+  padding: 8px 15px;
+  background-color: aqua;
+  border-radius: 4px;
+  color: #333;
+  position: absolute;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+
+  a{
+    color: #222;
+  }
+}
+
+/* India Details */
+.Indiadetails {
+  top: -65%;
+  /* Adjust position relative to marker */
+  left: -60%;
+}
+
+.Indiadetails::after {
+  content: '▼';
+  position: absolute;
+  bottom: -25%;
+  left: 50%;
+  translate: -50%;
+  color: aqua;
+}
+
+/* Australia Details */
+.AustraliaDetails {
+  top: -80%;
+  left: -36%;
+}
+
+.AustraliaDetails::after {
+  content: '▼';
+  position: absolute;
+  bottom: -25%;
+  left: 50%;
+  translate: -50%;
+  color: aqua;
+}
+
+/* Show details on hover */
+.marker:hover .markerDetails {
+  opacity: 1;
+}
+
+
+/* ================== MEDIA QUERIES ================== */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .description {
+    font-size: 24px;
+    max-width: 600px;
+  }
+
+  .mapWrapper {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .marker {
+    height: 10%;
+    width: 10%;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .globalWrapper {
+    gap: 40px;
+    padding: 0 16px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .description {
+    font-size: 18px;
+    max-width: 90%;
+  }
+
+  .mapWrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .map {
+    width: 100%;
+    height: auto;
+  }
+
+  .marker {
+    height: 9%;
+    width: 9%;
+  }
+
+  .markerDetails {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .title {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .mapWrapper {
+    max-width: 100%;
+  }
+
+  .marker {
+    height: 8%;
+    width: 8%;
+  }
+
+  .markerDetails {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+
+  .Indiadetails {
+    top: -300%;
+    left: -190%;
+  }
+
+  .AustraliaDetails {
+    top: -250%;
+    left: -150%;
+  }
+}

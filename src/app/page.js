@@ -1,5 +1,6 @@
 import BlogSection from "@/Component/BlogSection/BlogSection";
 import CallToActionSection from "@/Component/CallToActionSection/CallToActionSection";
+
 import GetQuote from "@/Component/GetQuote/GetQuote";
 import HeroSection from "@/Component/HeroSection/HeroSection";
 import ProjectsSection from "@/Component/ProjectsSection/ProjectsSection";

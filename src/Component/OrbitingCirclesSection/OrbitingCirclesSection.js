@@ -3,7 +3,7 @@ import OrbitingCirclesAnimation from "../OrbitingCirclesAnimation/OrbitingCircle
 
 const OrbitingCirclesSection = () => {
   return (
-    <div className="w-full flex items-center flex-col md:flex-row">
+    <div className="w-full flex items-center justify-center flex-col md:flex-row">
       <OrbitingCirclesAnimation />
       <div className="">
         <h1 className="text-8xl md:text-9xl font-semibold text-neon  -mb-3 md:-mb-5">Ideas</h1>

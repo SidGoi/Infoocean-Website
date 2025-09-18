@@ -1,6 +1,7 @@
 import BlogSection from "@/Component/BlogSection/BlogSection";
 import GetQuote from "@/Component/GetQuote/GetQuote";
 import HeroSection from "@/Component/HeroSection/HeroSection";
+import MultiStepForm from "@/Component/MultiStepForm/MultiStepForm";
 import ProjectsSection from "@/Component/ProjectsSection/ProjectsSection";
 import ServiceSection from "@/Component/ServiceSection/ServiceSection";
 import TechStack from "@/Component/TechStack/TechStack";
@@ -10,6 +11,7 @@ import WhyInfooceanSection from "@/Component/WhyInfooceanSection/WhyInfooceanSec
 const page = () => {
   return (
     <div className="flex flex-col gap-10">
+      <MultiStepForm />
       <HeroSection />
       <TechStack />
       <ServiceSection />

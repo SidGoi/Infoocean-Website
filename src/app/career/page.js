@@ -1,5 +1,6 @@
 import BlogSection from "@/Component/BlogSection/BlogSection";
 import CallToActionSection from "@/Component/CallToActionSection/CallToActionSection";
+import CurrentOpenings from "@/Component/CurrentOpenings/CurrentOpenings";
 import TeamMemberSection from "@/Component/TeamMemberSection/TeamMemberSection";
 import WhyInfooceanSection from "@/Component/WhyInfooceanSection/WhyInfooceanSection";
 import Link from "next/link";
@@ -18,6 +19,7 @@ const page = () => {
       />
       <WhyInfooceanSection />
       <TeamMemberSection />
+      <CurrentOpenings/>
       <BlogSection />
       <div className="flex flex-col gap-2 items-center justify-center text-center">
         <h1 className="text-2xl font-semibold text-primary">Looking For somthing else? </h1>

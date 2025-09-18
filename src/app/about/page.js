@@ -1,4 +1,7 @@
 import CallToActionSection from "@/Component/CallToActionSection/CallToActionSection";
+import FounderSection from "@/Component/FounderSection/FounderSection";
+import GlobalTeam from "@/Component/GlobalTeam/GlobalTeam";
+import MissionVision from "@/Component/MissionVision/MissionVision";
 import TeamMemberSection from "@/Component/TeamMemberSection/TeamMemberSection";
 import TestimonialSection from "@/Component/TestimonialSection/TestimonialSection";
 import Image from "next/image";
@@ -15,6 +18,10 @@ const page = () => {
         buttonText="Join us"
         buttonLink="/"
       />
+      <MissionVision />
+      <GlobalTeam />
+      <FounderSection />
+      <TeamMemberSection />
       <TestimonialSection />
       <CallToActionSection
         imageSrc="/images/Services.png"
@@ -23,9 +30,7 @@ const page = () => {
         heading="Together Let's Transform Professional Services"
         buttonText="Connect Now"
         buttonLink="/contact"
-        reverseLayout
       />
-      <TeamMemberSection />
     </div>
   );
 };
