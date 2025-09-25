@@ -8,7 +8,7 @@ const FounderSection = () => {
         <div
           className="w-full md:w-auto flex-shrink-0 relative bg-primary"
         >
-          <div className="flex justify-center items-center md:justify-end md:items-end h-full md:px-20 md:pt-10 px-10 ">
+          <div className="flex justify-center items-center md:justify-end md:items-end h-full md:px-20 px-10 pt-8 md:pt-10">
             <Image
               src="/images/CEO_of_Infoocean.png"
               height={1000}

@@ -172,6 +172,7 @@
   .marker {
     height: 9%;
     width: 9%;
+    display: none;
   }
 
   .markerDetails {
