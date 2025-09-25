@@ -123,6 +123,7 @@ const CurrentOpenings = () => {
                   />
                 ) : (
                   <IOButton
+                  back={true}
                     title="Back"
                     onClick={() => {
                       setStage(0);

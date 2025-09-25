@@ -121,31 +121,31 @@ const MultiStepForm = () => {
             />
           </div>
 
-          <div className={'w-full flex justify-between'}>
-              <IOButton
-                back={true}
-                title="Back"
-                onClick={() => {
+          <div className={"w-full flex justify-between"}>
+            <IOButton
+              back={true}
+              title="Back"
+              onClick={() => {
+                setProjectDetailsStatus(false);
+                setContactInformationStatus(true);
+              }}
+              backArrow={true}
+            />
+            <IOButton
+              title="Submit"
+              onClick={() => {
+                if (
+                  !servicesRef.current.value.trim() ||
+                  !budgetRef.current.value.trim()
+                ) {
+                  toast.error("Please fill all required project details!");
+                } else {
                   setProjectDetailsStatus(false);
                   setContactInformationStatus(true);
-                }}
-                backArrow={true}
-              />
-              <IOButton
-                title="Submit"
-                onClick={() => {
-                  if (
-                    !servicesRef.current.value.trim() ||
-                    !budgetRef.current.value.trim()
-                  ) {
-                    toast.error("Please fill all required project details!");
-                  } else {
-                    setProjectDetailsStatus(false);
-                    setContactInformationStatus(true);
-                    setSubmited(true);
-                  }
-                }}
-              />
+                  setSubmited(true);
+                }
+              }}
+            />
           </div>
         </div>
       </div>
