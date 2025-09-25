@@ -5,7 +5,8 @@ import Link from "next/link";
 
 const BlogCard = ({ post }) => {
   return (
-    <Link href={post.link} className="block w-full text-center group">
+    <Link href={`/blog/${post.slug}`} className="block w-full text-center group">
+      
       <div className="bg-light rounded-xl overflow-hidden">
         {/* Image */}
         <div className="relative w-full h-56 md:h-64">
