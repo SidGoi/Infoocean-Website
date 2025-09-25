@@ -1,3 +1,4 @@
+/* Dark Button Theme */
 .btnDark::after {
     content: "";
     position: absolute;
@@ -8,7 +9,7 @@
     transition: width 0.3s ease-out;
     z-index: -1;
 }
-.btnDark:hover{
+.btnDark:hover {
     color: var(--color-primary);
 }
 
@@ -16,11 +17,13 @@
     width: 100%;
 }
 
-.btnDark .btnArrowForward {
+.btnDark .btnArrowForward,
+.btnDark .btnArrowBack {
     color: #fff;
 }
 
-.btnDark:hover .btnArrowForward {
+.btnDark:hover .btnArrowForward,
+.btnDark:hover .btnArrowBack {
     color: var(--color-primary);
 }
 
@@ -41,25 +44,35 @@
     color: var(--color-primary);
 }
 
-.btnLight .btnArrowForward {
+.btnLight .btnArrowForward,
+.btnLight .btnArrowBack {
     color: var(--color-primary);
 }
 
-.btnLight:hover .btnArrowForward {
+.btnLight:hover .btnArrowForward,
+.btnLight:hover .btnArrowBack {
     color: var(--color-secondary);
 }
 
 /* Common Arrow Transition for both themes */
-.btnArrowForward {
+.btnArrowForward,
+.btnArrowBack {
     transition: color 0.3s ease, transform 0.3s ease;
     height: 1.2rem;
     width: auto;
 }
 
+/* Animations */
 .btnDark:hover .btnArrowForward {
     transform: translateX(4px);
 }
-
 .btnLight:hover .btnArrowForward {
     transform: translateX(4px);
+}
+
+.btnDark:hover .btnArrowBack {
+    transform: translateX(-4px);
+}
+.btnLight:hover .btnArrowBack {
+    transform: translateX(-4px);
 }

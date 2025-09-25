@@ -121,9 +121,9 @@ const MultiStepForm = () => {
             />
           </div>
 
-          <div className={styles.BtnContainer}>
-            <div className={styles.nextBtn}>
+          <div className={'w-full flex justify-between'}>
               <IOButton
+                back={true}
                 title="Back"
                 onClick={() => {
                   setProjectDetailsStatus(false);
@@ -131,8 +131,6 @@ const MultiStepForm = () => {
                 }}
                 backArrow={true}
               />
-            </div>
-            <div className={styles.nextBtn}>
               <IOButton
                 title="Submit"
                 onClick={() => {
@@ -148,7 +146,6 @@ const MultiStepForm = () => {
                   }
                 }}
               />
-            </div>
           </div>
         </div>
       </div>

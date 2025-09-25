@@ -134,31 +134,36 @@
 
 }
 
+
 /* 📱 Mobile Responsive Styles */
 @media (max-width: 768px) {
   .MultiStepForm {
     flex-direction: column;
     gap: 2rem;
     margin: 2rem 1rem;
-      transition: all;
-
   }
 
   .ContactInformationContainer,
   .ProjectDetailsContainer {
     width: 100%;
     max-width: 100%;
-    height: fit-content;
-    /* let it shrink naturally */
-    padding: 2rem 1.5rem;
-    gap: 2rem;
-    transition: 0.5s;
 
+    /* 👇 collapse state */
+    max-height: 100px;
+    padding: 0;
+    overflow: hidden;
+
+    gap: 2rem;
+    transition: max-height 0.5s ease, padding 0.5s ease;
   }
 
   .extended {
     width: 100%;
     max-width: 100%;
+
+    /* 👇 expanded state */
+    max-height: 1200px; /* enough to fit form content */
+    padding: 2rem 1.5rem;
   }
 
   .extended .inputFild {
