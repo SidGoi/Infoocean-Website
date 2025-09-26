@@ -29,7 +29,7 @@ const HeroSection = () => {
           <IOButton
             title="Explore Services"
             theme="dark"
-            buttonLink="/contact"
+            buttonLink="/service"
           />
         </div>
 

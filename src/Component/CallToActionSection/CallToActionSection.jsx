@@ -42,7 +42,8 @@ const CallToActionSection = ({
           <p className={`text-lg md:text-xl font-medium text-primary`}>
             {description}
           </p>
-          <IOButton title={buttonText} />
+
+          <IOButton title={buttonText} buttonLink={buttonLink} />
         </div>
       </div>
     </section>

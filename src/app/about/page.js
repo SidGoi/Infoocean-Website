@@ -16,7 +16,7 @@ const page = () => {
         description="We are a forward-thinking IT company turning complex tech into simple, scalable solutions. From enterprise software to cutting-edge AI, we deliver results that matter — on time, every time."
         heading="Empowering Ideas Engineering Solutions"
         buttonText="Join us"
-        buttonLink="/"
+        buttonLink="/contact"
       />
       <MissionVision />
       <GlobalTeam />

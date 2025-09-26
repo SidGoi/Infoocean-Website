@@ -45,7 +45,7 @@ const ProjectCard = ({ project, isReversed }) => {
         <IOButton
           title="Read the Case Study"
           theme="dark"
-          buttonLink={project.buttonLink}
+          buttonLink={'/blog'}
         />
       </div>
     </article>
