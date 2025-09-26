@@ -26,7 +26,7 @@ const BlogHeroSlider = ({ blogs }) => {
         {blogs.map((blog, index) => (
           <div
             key={index}
-            className={`flex flex-col-reverse md:flex-row gap-6 md:gap-12 items-center justify-center min-w-full bg-light p-10 rounded-2xl`}
+            className={`flex flex-col-reverse md:flex-row gap-6 md:gap-12 items-center justify-center min-w-full bg-light p-3 md:p-10 rounded-2xl`}
           >
             {/* Text Section */}
             <div className="flex flex-col gap-3 md:gap-6 w-full md:w-1/2">

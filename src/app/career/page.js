@@ -24,8 +24,8 @@ const page = () => {
         <h1 className="text-2xl font-semibold text-primary">
           Looking For somthing else?{" "}
         </h1>
-        <h2 className="text-3xl font-medium text-primary">
-          Reach out to us at
+        <h2 className="text-2xl md:text-3xl font-medium text-primary">
+          Reach out to us at <br/>
           <a
             href="mailto:career@infoocean.in"
             className="text-secondary underline hover:text-neon transition-all duration-500"
